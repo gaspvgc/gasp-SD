@@ -265,6 +265,25 @@ export const Formats: FormatList = [
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
 
+	// BD/SP Doubles
+   ///////////////////////////////////////////////////////////////////
+
+   {
+   		section: "Diamond & Pearl",
+   },
+   {
+   		name: "[Gen 4] VGC 2022",
+   		mod: 'gen4',
+   		forcedLevel: 50,
+         		teamLength: {
+         			validate: [4, 6],
+         			battle: 4,
+         		},
+   		gameType: 'doubles',
+   		ruleset: ['Standard GBU', 'VGC Timer'],
+   		minSourceGen: 4,
+   },
+
 	// Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
 
@@ -276,8 +295,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		team: 'random',
-		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
 		name: "[Gen 8] Doubles OU",
