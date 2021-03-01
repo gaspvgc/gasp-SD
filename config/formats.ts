@@ -269,20 +269,27 @@ export const Formats: FormatList = [
    ///////////////////////////////////////////////////////////////////
 
    {
-   		section: "Diamond & Pearl",
+   		section: "Brilliant Diamond & Shining & Pearl",
    },
    {
-   		name: "[Gen 8] VGC 2022",
+   		name: "[Gen 8] National Dex BD/SP",
    		mod: 'gen8',
    		forcedLevel: 50,
-         		teamLength: {
-         			validate: [4, 6],
-         			battle: 4,
-         		},
-   		gameType: 'doubles',
-   		ruleset: ['Standard GBU', 'VGC Timer', 'Gen 4 Clause'],
-   		minSourceGen: 8,
-   },
+                  		teamLength: {
+                  			validate: [4, 6],
+                  			battle: 4,
+                  		},
+         gameType: 'doubles',
+   		ruleset: ['NatDex GBU', 'Dynamax Clause', 'Gen 4 Clause'],
+   		banlist: [
+   			'Alakazam-Mega', 'Arceus', 'Blastoise-Mega','Charizard-Mega-X','Charizard-Mega-Y', 'Blaziken', 'Calyrex-Ice', 'Calyrex-Shadow', 'Darkrai', 'Darmanitan-Galar', 'Deoxys-Attack',
+   			'Deoxys-Base', 'Deoxys-Speed', 'Dialga', 'Dracovish', 'Dragapult', 'Eternatus', 'Genesect', 'Gengar-Mega', 'Giratina', 'Giratina-Origin',
+   			'Groudon', 'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala',
+   			'Marshadow', 'Metagross-Mega', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Necrozma-Ultra', 'Palkia', 'Pheromosa',
+   			'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Spectrier', 'Tornadus-Therian', 'Urshifu-Base', 'Xerneas', 'Yveltal',
+   			'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-Base', 'Zygarde-Complete',
+   		],
+   	},
 
 	// Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
