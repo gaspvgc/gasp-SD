@@ -965,6 +965,18 @@ export const Formats: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	gen4clause: {
+   		effectType: 'ValidatorRule',
+   		name: 'Gen 4 Clause',
+   		desc: "Only Pokèmon from gen 4 or previous are allowed",
+   		onValidateSet(set) {
+         			const species = this.dex.getSpecies(set.species || set.name);
+         			if (species.num > 495) {
+         				if (this.ruleTable.has(`+pokemon:${species.id}`)) return;
+         				return [`${set.species} is banned due to Gen 4 clause.`];
+                   }
+         },
+   },
 	dynamaxclause: {
 		effectType: 'Rule',
 		name: 'Dynamax Clause',

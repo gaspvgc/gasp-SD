@@ -272,16 +272,16 @@ export const Formats: FormatList = [
    		section: "Diamond & Pearl",
    },
    {
-   		name: "[Gen 4] VGC 2022",
-   		mod: 'gen4',
+   		name: "[Gen 8] VGC 2022",
+   		mod: 'gen8',
    		forcedLevel: 50,
          		teamLength: {
          			validate: [4, 6],
          			battle: 4,
          		},
    		gameType: 'doubles',
-   		ruleset: ['Standard GBU', 'VGC Timer'],
-   		minSourceGen: 4,
+   		ruleset: ['Standard GBU', 'VGC Timer', 'Gen 4 Clause'],
+   		minSourceGen: 8,
    },
 
 	// Sw/Sh Doubles
