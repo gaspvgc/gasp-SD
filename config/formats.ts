@@ -269,7 +269,7 @@ export const Formats: FormatList = [
    ///////////////////////////////////////////////////////////////////
 
    {
-   		section: "Brilliant Diamond & Shining & Pearl",
+   		section: "Brilliant Diamond & Shining Pearl",
    },
    {
    		name: "[Gen 8] National Dex BD/SP",
